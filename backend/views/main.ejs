@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Web Push Send</title>
+</head>
+<body>
+    <div style="text-align:center;margin-bottom:1px">
+        <div>
+            <h1>webpush send server</h1>
+        </div>
+    </div>
+    <hr>
+    <h1>send message to single user</h1>
+    <form action="/msg" method="POST">
+        <div>
+            <label style="display: inline-block;width: 120px;text-align: right;">id</label>
+            <input type="text" name="id" placeholder="id to send push" maxlength="20">
+        </div>
+        <div>
+            <label style="display: inline-block;width: 120px;text-align: right;">message title</label>
+            <input type="text" name="msgtitle" placeholder="message title">
+        </div>
+        <div>
+            <label style="display: inline-block;width: 120px;text-align: right;">message body</label>
+            <input type="text" name="msgbody" placeholder="message body">
+        </div>
+        <div style="display : inline-block; width: 300px;text-align: right;">
+            <button>submit</button>
+        </div>
+    </form>
+    <h1>send broadcast message</h1>
+    <form action="/msg" method="POST">
+        <div>
+            <label style="display: inline-block;width: 120px;text-align: right;">message title</label>
+            <input type="text" name="msgtitle" placeholder="message title">
+        </div>
+        <div>
+            <label style="display: inline-block;width: 120px;text-align: right;">message body</label>
+            <input type="text" name="msgbody" placeholder="message body">
+        </div>
+        <div style="display : inline-block; width: 300px;text-align: right;">
+            <button>submit</button>
+        </div>
+    </form>
+    <hr>
+    <div style = "text-align:center;margin-top:1px">
+        <span>개발자 : </span>
+        <a href="https://github.com/namjunjeong">omija_tea</a>
+    </div>
+</body>
+</html>

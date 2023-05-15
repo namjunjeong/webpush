@@ -1,0 +1,1 @@
+CREATE TABLE vapidkey(public_key VARCHAR(100) PRIMARY KEY,private_key VARCHAR(100) NOT NULL);
